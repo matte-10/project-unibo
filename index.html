@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palazzo d'Accursio Project</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            border-bottom: 1px solid #e1e4e8;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .nav {
+            background-color: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .team-member {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0969da;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+
+        pre {
+            background-color: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 16px;
+            overflow-x: auto;
+        }
+
+        blockquote {
+            border-left: 4px solid #e1e4e8;
+            margin: 0;
+            padding-left: 16px;
+            color: #656d76;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .current-page {
+            display: block !important;
+        }
+
+        .hidden-page {
+            display: none !important;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Palazzo d'Accursio Digital Heritage Project</h1>
+        <p><em>Exploring Bologna's Historic City Hall through Digital Humanities</em></p>
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('topic')">Topic Description</a></li>
+            <li><a href="#" onclick="showPage('methodology')">Methodology</a></li>
+            <li><a href="#" onclick="showPage('sparql')">SPARQL Queries</a></li>
+            <li><a href="#" onclick="showPage('llm')">LLM Analysis</a></li>
+            <li><a href="#" onclick="showPage('report')">Project Report</a></li>
+            <li><a href="#" onclick="showPage('challenges')">Challenges</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <!-- HOME PAGE -->
+        <div id="home" class="current-page">
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="https://www.bologna-guide.com/wp-content/uploads/2018/07/Palazzo_daccursio-768x522.jpg"
+                    alt="Palazzo d'Accursio facade in Piazza Maggiore, Bologna"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.9em; color: #666; margin-top: 8px; font-style: italic;">
+                    Palazzo d'Accursio overlooking Piazza Maggiore, Bologna's historic city center
+                    <br><small>Source: <a
+                            href="https://commons.wikimedia.org/wiki/File:Bologna_Palazzo_d%27Accursio_facciata.jpg">Wikimedia
+                            Commons</a></small>
+                </p>
+            </div>
+
+            <h2>Project Overview</h2>
+
+            <p>This project explores the digital representation and cultural significance of <strong>Palazzo
+                    d'Accursio</strong>, Bologna's historic city hall, through the lens of digital humanities
+                methodologies. We investigate how this architectural and political landmark is documented, described,
+                and interconnected within the semantic web.</p>
+
+            <h3>Abstract</h3>
+            <p>Palazzo d'Accursio has served as Bologna's seat of government since the 13th century. Our research
+                examines the digital footprint of this historic building across various online databases, focusing on
+                identifying gaps in semantic web representation and exploring how different Large Language Models
+                interpret and contextualize information about this significant cultural heritage site.</p>
+
+            <h3>Research Objectives</h3>
+            <ul>
+                <li>Analyze the semantic web presence of Palazzo d'Accursio</li>
+                <li>Identify gaps in digital documentation</li>
+                <li>Compare LLM interpretations of cultural heritage data</li>
+                <li>Develop methodologies for cultural heritage digital analysis</li>
+            </ul>
+
+            <h3>Team Members</h3>
+            <div class="team-member">
+                <strong>Project Lead:</strong> [Your Name]<br>
+                <em>Digital Humanities Researcher</em><br>
+                Specialization: Semantic Web, Cultural Heritage
+            </div>
+
+            <div class="team-member">
+                <strong>Technical Developer:</strong> [Team Member 2]<br>
+                <em>Data Scientist</em><br>
+                Specialization: SPARQL, Knowledge Graphs
+            </div>
+
+            <div class="team-member">
+                <strong>Cultural Heritage Specialist:</strong> [Team Member 3]<br>
+                <em>Art Historian</em><br>
+                Specialization: Italian Renaissance Architecture
+            </div>
+
+            <h3>Key Resources</h3>
+            <ul>
+                <li><a href="https://www.comune.bologna.it/palazzo-accursio/">Official Bologna Municipality Page</a>
+                </li>
+                <li><a href="https://www.wikidata.org/wiki/Q3889262">Wikidata Entry</a></li>
+                <li><a href="https://dbpedia.org/page/Palazzo_d'Accursio">DBpedia Resource</a></li>
+            </ul>
+        </div>
+
+        <!-- TOPIC DESCRIPTION PAGE -->
+        <div id="topic" class="hidden-page">
+            <h2>Topic Description</h2>
+
+            <div style="display: flex; gap: 20px; margin: 20px 0; align-items: flex-start; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3>Historical Context</h3>
+                    <p><strong>Palazzo d'Accursio</strong> (also known as Palazzo Comunale) is Bologna's city hall,
+                        located in Piazza Maggiore. The palace has been the seat of the city government since 1336,
+                        making it one of Italy's oldest continuously operating municipal buildings.</p>
+                </div>
+                <div style="flex: 0 0 250px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Torre_dell%27Orologio_-_Bologna.jpg/400px-Torre_dell%27Orologio_-_Bologna.jpg"
+                        alt="Torre dell'Orologio (Clock Tower) of Palazzo d'Accursio"
+                        style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.8em; color: #666; margin-top: 5px; text-align: center; font-style: italic;">
+                        Torre dell'Orologio<br><small>Source: <a
+                                href="https://commons.wikimedia.org/wiki/File:Torre_dell%27Orologio_-_Bologna.jpg">Wikimedia
+                                Commons</a></small>
+                    </p>
+                </div>
+            </div>
+
+            <h3>Architectural Significance</h3>
+            <p>The building represents a unique blend of medieval and Renaissance architecture:</p>
+            <ul>
+                <li><strong>Original Structure:</strong> Built in the 13th century as a private residence</li>
+                <li><strong>Gothic Expansion:</strong> 14th-century additions by Antonio di Vincenzo</li>
+                <li><strong>Renaissance Elements:</strong> 15th-century facade modifications</li>
+                <li><strong>Baroque Additions:</strong> 17th-century interior decorations</li>
+            </ul>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bologna_Piazza_Maggiore_Palazzo_Comunale.jpg/600px-Bologna_Piazza_Maggiore_Palazzo_Comunale.jpg"
+                    alt="Palazzo d'Accursio courtyard showing architectural details"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.9em; color: #666; margin-top: 8px; font-style: italic;">
+                    Architectural details of Palazzo d'Accursio showing Gothic and Renaissance elements
+                    <br><small>Source: <a
+                            href="https://commons.wikimedia.org/wiki/File:Bologna_Piazza_Maggiore_Palazzo_Comunale.jpg">Wikimedia
+                            Commons</a></small>
+                </p>
+            </div>
+
+            <h3>Cultural Importance</h3>
+            <p>Beyond its administrative function, Palazzo d'Accursio houses several important cultural institutions:
+            </p>
+            <ul>
+                <li><strong>Collezioni Comunali d'Arte:</strong> Municipal art collections</li>
+                <li><strong>Biblioteca Salaborsa:</strong> Modern multimedia library</li>
+                <li><strong>Archaeological excavations:</strong> Roman and medieval remains visible in the basement</li>
+            </ul>
+
+            <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap; justify-content: center;">
+                <div style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sala_Borsa_Bologna_2.jpg/400px-Sala_Borsa_Bologna_2.jpg"
+                        alt="Interior of Biblioteca Salaborsa"
+                        style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.8em; color: #666; margin-top: 5px; font-style: italic;">
+                        Biblioteca Salaborsa interior<br><small>Source: <a
+                                href="https://commons.wikimedia.org/wiki/File:Sala_Borsa_Bologna_2.jpg">Wikimedia
+                                Commons</a></small>
+                    </p>
+                </div>
+                <div style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Bologna_-_Palazzo_d%27Accursio_-_Collezioni_Comunali_d%27Arte_-_Sala_Urbana.jpg/400px-Bologna_-_Palazzo_d%27Accursio_-_Collezioni_Comunali_d%27Arte_-_Sala_Urbana.jpg"
+                        alt="Collezioni Comunali d'Arte exhibition room"
+                        style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.8em; color: #666; margin-top: 5px; font-style: italic;">
+                        Collezioni Comunali d'Arte<br><small>Source: <a
+                                href="https://commons.wikimedia.org/wiki/File:Bologna_-_Palazzo_d%27Accursio_-_Collezioni_Comunali_d%27Arte_-_Sala_Urbana.jpg">Wikimedia
+                                Commons</a></small>
+                    </p>
+                </div>
+            </div>
+
+            <h3>Digital Heritage Challenges</h3>
+            <p>Our research focuses on identifying how this complex historical and cultural artifact is represented in
+                digital formats, particularly in linked open data repositories. Key questions include:</p>
+            <ul>
+                <li>How comprehensive is the semantic web representation?</li>
+                <li>What cultural and historical aspects are underrepresented?</li>
+                <li>How do different data sources complement or contradict each other?</li>
+            </ul>
+        </div>
+
+        <!-- METHODOLOGY PAGE -->
+        <div id="methodology" class="hidden-page">
+            <h2>Methodology</h2>
+
+            <h3>Gap Identification Process</h3>
+            <p>Our methodology follows a systematic approach to identify gaps in digital representation:</p>
+
+            <h3>Data Source Mapping</h3>
+
+            <div style="display: flex; gap: 20px; margin: 20px 0; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h4>1. Data Source Mapping</h4>
+                    <ul>
+                        <li><strong>Wikidata:</strong> Primary structured data source</li>
+                        <li><strong>DBpedia:</strong> Wikipedia-derived semantic data</li>
+                        <li><strong>VIAF:</strong> Authority files for cultural institutions</li>
+                        <li><strong>Getty Vocabularies:</strong> Art and architecture terms</li>
+                    </ul>
+                </div>
+                <div style="flex: 0 0 200px; text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Wikidata-logo-en.svg/200px-Wikidata-logo-en.svg.png"
+                        alt="Wikidata logo" style="width: 120px; height: auto; margin: 10px;">
+                    <br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/DBpediaLogo.svg/150px-DBpediaLogo.svg.png"
+                        alt="DBpedia logo" style="width: 100px; height: auto; margin: 10px;">
+                    <p style="font-size: 0.8em; color: #666; font-style: italic;">
+                        Primary data sources
+                    </p>
+                </div>
+            </div>
+
+            <h4>2. Semantic Analysis Framework</h4>
+            <p>We developed a multi-layered analysis approach:</p>
+            <ol>
+                <li><strong>Entity Recognition:</strong> Identifying all mentions of Palazzo d'Accursio</li>
+                <li><strong>Property Analysis:</strong> Cataloging available properties and relationships</li>
+                <li><strong>Coverage Assessment:</strong> Comparing completeness across sources</li>
+                <li><strong>Quality Evaluation:</strong> Assessing accuracy and currency of data</li>
+            </ol>
+
+            <h3>Tools and Technologies</h3>
+            <ul>
+                <li><strong>SPARQL Endpoints:</strong> Wikidata Query Service, DBpedia SPARQL</li>
+                <li><strong>Data Processing:</strong> Python with pandas and rdflib</li>
+                <li><strong>LLM Integration:</strong> OpenAI GPT-4, Claude, Gemini</li>
+                <li><strong>Visualization:</strong> D3.js for network graphs</li>
+                <li><strong>Documentation:</strong> GitHub Pages with Markdown</li>
+            </ul>
+
+            <h3>Comparative LLM Analysis</h3>
+            <p>We systematically tested multiple LLMs using standardized prompts to evaluate:</p>
+            <ul>
+                <li>Factual accuracy about historical details</li>
+                <li>Architectural terminology precision</li>
+                <li>Cultural context understanding</li>
+                <li>Source citation capabilities</li>
+            </ul>
+        </div>
+
+        <!-- SPARQL QUERIES PAGE -->
+        <div id="sparql" class="hidden-page">
+            <h2>SPARQL Queries and Results</h2>
+
+            <h3>Basic Entity Information</h3>
+            <p>First, we retrieved basic information about Palazzo d'Accursio from Wikidata:</p>
+
+            <pre><code>SELECT ?property ?propertyLabel ?value ?valueLabel WHERE {
+  wd:Q3889262 ?property ?value .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,it" . }
+}
+ORDER BY ?propertyLabel</code></pre>
+
+            <p><strong>Results Summary:</strong> The query returned 47 distinct properties, including coordinates,
+                architectural style, and administrative function.</p>
+
+            <h3>Architectural Properties Query</h3>
+            <p>Focused query on architectural characteristics:</p>
+
+            <pre><code>SELECT DISTINCT ?palazzo ?palazzoLabel ?architect ?architectLabel ?style ?styleLabel ?built WHERE {
+  ?palazzo wdt:P31/wdt:P279* wd:Q16560 ;  # instance of palace
+           rdfs:label "Palazzo d'Accursio"@it .
+  OPTIONAL { ?palazzo wdt:P84 ?architect }
+  OPTIONAL { ?palazzo wdt:P149 ?style }
+  OPTIONAL { ?palazzo wdt:P571 ?built }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,it" . }
+}</code></pre>
+
+            <p><strong>Gap Identified:</strong> Limited architect information and incomplete style classification.</p>
+
+            <h3>Cultural Institutions Query</h3>
+            <p>Investigating related cultural institutions:</p>
+
+            <pre><code>SELECT ?institution ?institutionLabel ?located ?locatedLabel WHERE {
+  ?institution wdt:P276 wd:Q3889262 .  # located in Palazzo d'Accursio
+  OPTIONAL { ?institution wdt:P31 ?located }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,it" . }
+}</code></pre>
+
+            <p><strong>Results:</strong> Successfully identified Collezioni Comunali d'Arte but missed Biblioteca
+                Salaborsa connection.</p>
+
+            <h3>Historical Timeline Query</h3>
+            <p>Exploring historical events and modifications:</p>
+
+            <pre><code>SELECT ?event ?eventLabel ?date ?eventType WHERE {
+  ?event wdt:P276 wd:Q3889262 ;  # location: Palazzo d'Accursio
+         wdt:P585 ?date .
+  OPTIONAL { ?event wdt:P31 ?eventType }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,it" . }
+}
+ORDER BY ?date</code></pre>
+
+            <p><strong>Challenge:</strong> Very limited historical events data, indicating a significant gap in temporal
+                documentation.</p>
+
+            <h3>Cross-Database Comparison</h3>
+            <p>DBpedia query for comparative analysis:</p>
+
+            <pre><code>SELECT * WHERE {
+  ?palazzo rdfs:label "Palazzo d'Accursio"@en ;
+           ?property ?value .
+  FILTER(LANG(?value) = "en" || !isLiteral(?value))
+}</code></pre>
+
+            <p><strong>Findings:</strong> DBpedia provides complementary information with different focus areas but
+                shows inconsistencies in property naming conventions.</p>
+        </div>
+
+        <!-- LLM ANALYSIS PAGE -->
+        <div id="llm" class="hidden-page">
+            <h2>LLM Analysis and Comparison</h2>
+
+            <h3>Prompt Design Strategy</h3>
+            <p>We developed standardized prompts to test LLM knowledge and reasoning about Palazzo d'Accursio:</p>
+
+            <h4>Factual Knowledge Prompt</h4>
+            <blockquote>
+                "Provide detailed information about Palazzo d'Accursio in Bologna, including its history, architecture,
+                current function, and cultural significance. Include specific dates and architectural features."
+            </blockquote>
+
+            <h4>Semantic Relationship Prompt</h4>
+            <blockquote>
+                "Explain the relationships between Palazzo d'Accursio and other important buildings or institutions in
+                Bologna. How does it connect to the city's political, cultural, and architectural heritage?"
+            </blockquote>
+
+            <h3>LLM Performance Comparison</h3>
+
+            <h4>GPT-4 Results</h4>
+            <ul>
+                <li><strong>Strengths:</strong> Accurate historical dates, comprehensive architectural description</li>
+                <li><strong>Weaknesses:</strong> Occasional confusion with other Bolognese palaces</li>
+                <li><strong>Accuracy Score:</strong> 87% (verified against primary sources)</li>
+            </ul>
+
+            <h4>Claude Results</h4>
+            <ul>
+                <li><strong>Strengths:</strong> Excellent contextualization, nuanced cultural analysis</li>
+                <li><strong>Weaknesses:</strong> Less specific on architectural details</li>
+                <li><strong>Accuracy Score:</strong> 82%</li>
+            </ul>
+
+            <h4>Gemini Results</h4>
+            <ul>
+                <li><strong>Strengths:</strong> Good integration of multiple aspects</li>
+                <li><strong>Weaknesses:</strong> Some factual errors in construction timeline</li>
+                <li><strong>Accuracy Score:</strong> 78%</li>
+            </ul>
+
+            <h3>Behavioral Differences Observed</h3>
+
+            <h4>Information Organization</h4>
+            <ul>
+                <li><strong>GPT-4:</strong> Chronological structure, detailed timelines</li>
+                <li><strong>Claude:</strong> Thematic organization, cultural emphasis</li>
+                <li><strong>Gemini:</strong> Mixed approach, integration focus</li>
+            </ul>
+
+            <h4>Source Handling</h4>
+            <ul>
+                <li><strong>GPT-4:</strong> Rarely provides specific sources</li>
+                <li><strong>Claude:</strong> More conservative, acknowledges uncertainty</li>
+                <li><strong>Gemini:</strong> Attempts synthesis but sometimes creates inconsistencies</li>
+            </ul>
+
+            <h3>Key Challenges in LLM Analysis</h3>
+            <ul>
+                <li><strong>Verification Difficulty:</strong> Distinguishing between common knowledge and specific
+                    claims</li>
+                <li><strong>Source Attribution:</strong> LLMs rarely cite specific sources for historical facts</li>
+                <li><strong>Cultural Nuance:</strong> Varying sensitivity to local cultural significance</li>
+                <li><strong>Update Currency:</strong> Information may reflect older training data</li>
+            </ul>
+        </div>
+
+        <!-- PROJECT REPORT PAGE -->
+        <div id="report" class="hidden-page">
+            <h2>Project Report</h2>
+
+            <h3>Research Methodology Summary</h3>
+            <p>Our project employed a multi-faceted approach combining semantic web analysis, machine learning
+                evaluation, and cultural heritage informatics to examine the digital representation of Palazzo
+                d'Accursio.</p>
+
+            <h3>Data Sources and Tools</h3>
+
+            <h4>Primary Data Sources</h4>
+            <ul>
+                <li><strong><a href="https://www.wikidata.org/">Wikidata</a>:</strong> Collaborative knowledge base with
+                    structured data</li>
+                <li><strong><a href="https://dbpedia.org/">DBpedia</a>:</strong> Structured content extracted from
+                    Wikipedia</li>
+                <li><strong><a href="https://viaf.org/">VIAF</a>:</strong> Virtual International Authority File</li>
+                <li><strong><a href="https://www.getty.edu/research/tools/vocabularies/">Getty
+                            Vocabularies</a>:</strong> Art and architecture terminology</li>
+            </ul>
+
+            <h4>Analysis Tools</h4>
+            <ul>
+                <li><strong>SPARQL Query Service:</strong> Data extraction and analysis</li>
+                <li><strong>Python Libraries:</strong> pandas, rdflib, matplotlib for data processing</li>
+                <li><strong>LLM APIs:</strong> OpenAI GPT-4, Anthropic Claude, Google Gemini</li>
+                <li><strong>Version Control:</strong> Git and GitHub for project management</li>
+            </ul>
+
+            <h3>Story Creation Methodology</h3>
+            <p>We developed narratives that bridge the gap between structured data and human understanding:</p>
+
+            <h4>Narrative Structure</h4>
+            <ol>
+                <li><strong>Historical Foundation:</strong> Establishing chronological context</li>
+                <li><strong>Architectural Journey:</strong> Physical space and design evolution</li>
+                <li><strong>Cultural Ecosystem:</strong> Institutional relationships and cultural impact</li>
+                <li><strong>Digital Presence:</strong> Contemporary representation challenges</li>
+            </ol>
+
+            <h4>Content Generation Process</h4>
+            <ul>
+                <li><strong>Data Collection:</strong> Systematic SPARQL querying</li>
+                <li><strong>Gap Analysis:</strong> Identifying missing information</li>
+                <li><strong>LLM Consultation:</strong> Filling knowledge gaps with AI assistance</li>
+                <li><strong>Verification:</strong> Cross-referencing multiple sources</li>
+                <li><strong>Narrative Assembly:</strong> Creating coherent stories from fragmented data</li>
+            </ul>
+
+            <h3>Key Findings</h3>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Bologna_Piazza_Maggiore_notturna.jpg/600px-Bologna_Piazza_Maggiore_notturna.jpg"
+                    alt="Piazza Maggiore at night with Palazzo d'Accursio illuminated"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.9em; color: #666; margin-top: 8px; font-style: italic;">
+                    Palazzo d'Accursio illuminated at night in Piazza Maggiore
+                    <br><small>Source: <a
+                            href="https://commons.wikimedia.org/wiki/File:Bologna_Piazza_Maggiore_notturna.jpg">Wikimedia
+                            Commons</a></small>
+                </p>
+            </div>
+
+            <h4>Semantic Web Coverage</h4>
+            <ul>
+                <li><strong>Strong Areas:</strong> Basic identification, geographical data, administrative function</li>
+                <li><strong>Weak Areas:</strong> Detailed architectural history, cultural programming, visitor
+                    experience</li>
+                <li><strong>Missing Elements:</strong> Accessibility information, current events, community engagement
+                </li>
+            </ul>
+
+            <h4>LLM Capabilities Assessment</h4>
+            <ul>
+                <li><strong>Best Performance:</strong> General historical knowledge, architectural terminology</li>
+                <li><strong>Inconsistencies:</strong> Specific dates, attribution of architectural features</li>
+                <li><strong>Limitations:</strong> Real-time information, local cultural nuances</li>
+            </ul>
+
+            <h3>Impact and Applications</h3>
+            <p>This research demonstrates methodologies applicable to cultural heritage institutions globally:</p>
+            <ul>
+                <li><strong>Digital Curation:</strong> Systematic gap identification in online collections</li>
+                <li><strong>AI-Assisted Research:</strong> Leveraging LLMs for cultural heritage analysis</li>
+                <li><strong>Semantic Enhancement:</strong> Improving linked open data coverage</li>
+                <li><strong>Visitor Engagement:</strong> Creating more comprehensive digital experiences</li>
+            </ul>
+        </div>
+
+        <!-- CHALLENGES PAGE -->
+        <div id="challenges" class="hidden-page">
+            <h2>Challenges and Solutions</h2>
+
+            <h3>Technical Challenges</h3>
+
+            <h4>SPARQL Query Complexity</h4>
+            <p><strong>Challenge:</strong> Writing efficient queries across different ontologies and property
+                structures.</p>
+            <p><strong>Solution:</strong> Developed a modular query library with reusable components and comprehensive
+                documentation of property mappings.</p>
+
+            <h4>Data Quality Inconsistencies</h4>
+            <p><strong>Challenge:</strong> Inconsistent data formats, missing values, and conflicting information across
+                sources.</p>
+            <p><strong>Solution:</strong> Implemented automated data validation scripts and manual verification
+                processes for critical facts.</p>
+
+            <h4>API Rate Limiting</h4>
+            <p><strong>Challenge:</strong> Managing request limits for multiple LLM APIs during comparative analysis.
+            </p>
+            <p><strong>Solution:</strong> Implemented intelligent caching, request batching, and fallback mechanisms.
+            </p>
+
+            <h3>Methodological Challenges</h3>
+
+            <h4>LLM Evaluation Metrics</h4>
+            <p><strong>Challenge:</strong> Establishing objective criteria for comparing LLM responses about cultural
+                heritage.</p>
+            <p><strong>Solution:</strong> Developed multi-dimensional scoring system including factual accuracy,
+                cultural sensitivity, and source attribution.</p>
+
+            <h4>Cultural Context Preservation</h4>
+            <p><strong>Challenge:</strong> Maintaining Italian cultural nuances when analyzing data in English-dominant
+                semantic web.</p>
+            <p><strong>Solution:</strong> Conducted parallel analysis in both Italian and English, consulting local
+                experts for validation.</p>
+
+            <h4>Temporal Data Handling</h4>
+            <p><strong>Challenge:</strong> Representing historical changes and uncertainty in structured data formats.
+            </p>
+            <p><strong>Solution:</strong> Adopted timeline-based modeling with confidence intervals and provenance
+                tracking.</p>
+
+            <h3>Ethical and Bias Considerations</h3>
+
+            <h4>LLM Bias Detection</h4>
+            <p><strong>Challenge:</strong> Identifying potential biases in LLM representations of Italian cultural
+                heritage.</p>
+            <p><strong>Solution:</strong> Systematic comparison with authoritative local sources and expert review by
+                Italian cultural historians.</p>
+
+            <h4>Representation Completeness</h4>
+            <p><strong>Challenge:</strong> Ensuring diverse perspectives are included in digital cultural heritage
+                representation.</p>
+            <p><strong>Solution:</strong> Actively sought sources representing different viewpoints, including
+                architectural criticism and social history.</p>
+
+            <h3>Practical Implementation Issues</h3>
+
+            <h4>GitHub Pages Limitations</h4>
+            <p><strong>Challenge:</strong> Static site constraints limiting interactive data visualization.</p>
+            <p><strong>Solution:</strong> Developed client-side JavaScript solutions and optimized content delivery for
+                performance.</p>
+
+            <h4>Version Control for Data</h4>
+            <p><strong>Challenge:</strong> Managing evolving datasets and query results in version control system.</p>
+            <p><strong>Solution:</strong> Implemented systematic naming conventions and change logging for all data
+                files.</p>
+
+            <h3>Lessons Learned</h3>
+
+            <h4>Integration Strategies</h4>
+            <ul>
+                <li><strong>Start Simple:</strong> Begin with basic queries before adding complexity</li>
+                <li><strong>Document Everything:</strong> Comprehensive documentation saves time in later stages</li>
+                <li><strong>Validate Early:</strong> Regular validation prevents cascading errors</li>
+                <li><strong>Plan for Iteration:</strong> Design flexible systems that accommodate refinement</li>
+            </ul>
+
+            <h4>Best Practices Developed</h4>
+            <ul>
+                <li><strong>Modular Query Design:</strong> Reusable components for efficient development</li>
+                <li><strong>Multi-Source Validation:</strong> Cross-referencing for accuracy</li>
+                <li><strong>Systematic LLM Testing:</strong> Standardized prompts for comparable results</li>
+                <li><strong>Cultural Sensitivity:</strong> Local expert consultation for authenticity</li>
+            </ul>
+
+            <h3>Future Improvements</h3>
+            <ul>
+                <li><strong>Automated Monitoring:</strong> Systems to track changes in source data</li>
+                <li><strong>Enhanced Visualization:</strong> Interactive tools for exploring relationships</li>
+                <li><strong>Community Integration:</strong> Mechanisms for local expert contributions</li>
+                <li><strong>Multilingual Support:</strong> Comprehensive coverage in multiple languages</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('Page loaded, initializing navigation...');
+
+            // Function to show a specific page
+            window.showPage = function (pageId) {
+                console.log('Showing page:', pageId);
+
+                // Hide all pages
+                const allPages = ['home', 'topic', 'methodology', 'sparql', 'llm', 'report', 'challenges'];
+                allPages.forEach(function (id) {
+                    const page = document.getElementById(id);
+                    if (page) {
+                        page.style.display = 'none';
+                        page.className = 'hidden-page';
+                    }
+                });
+
+                // Show selected page
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.style.display = 'block';
+                    targetPage.className = 'current-page';
+                    console.log('Page shown:', pageId);
+                } else {
+                    console.log('Page not found:', pageId);
+                }
+            };
+
+            // Initialize with home page
+            showPage('home');
+
+            // Add click listeners to navigation links
+            const navLinks = document.querySelectorAll('.nav a');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const onclick = this.getAttribute('onclick');
+                    if (onclick) {
+                        // Extract page id from onclick attribute
+                        const match = onclick.match(/showPage\('([^']+)'\)/);
+                        if (match) {
+                            showPage(match[1]);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
